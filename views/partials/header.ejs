@@ -1,0 +1,281 @@
+<!-- views/partials/header.ejs  -->
+
+<nav class="navbar navbar-default" role="navigation">
+<div class="container-fluid">
+
+   <div class="navbar-header">
+       <a class="navbar-brand" href="/">
+           <span class="glyphicon glyphicon glyphicon-tree-deciduous"></span>
+            BlogLogo
+       </a>
+
+       <ul class="nav navbar-nav">
+           <li><a href="/">Home</a></li>
+           <li><a href="/blog/authors">Authors</a></li>
+           <li><a href="/blog/posts">Posts</a></li>
+           <li><a href="/blog/categories">Categories</a></li>
+      </ul>
+   </div>
+
+</div>
+</nav>
+<!-- <style>
+body
+	{
+		margin: 0px;
+		padding: 0px;
+		background: #111111;
+		font-family: 'Didact Gothic', sans-serif;
+		font-size: 12pt;
+		font-weight: 200;
+		color: #FFF;
+	}
+	
+/* Welcome                                                                       */
+/*********************************************************************************/
+
+	#welcome
+	{
+		position: relative;
+		padding: 7em 0em 7em 0em;
+		background: #111111 url(/header-bg.jpg) no-repeat center;
+		background-size: cover;
+		text-align: center;
+	}
+	
+	#welcome .container
+	{
+		width: 1000px;
+		padding: 0px 100px;
+		color: rgba(255,255,255,0.8);
+	}
+	
+	#welcome a
+	{
+		color: rgba(255,255,255,1);
+	}
+
+
+    /*********************************************************************************/
+/* Heading Titles                                                                */
+/*********************************************************************************/
+
+	.title
+	{
+		margin-bottom: 3em;
+	}
+	
+	.title h2
+	{
+		font-size: 2.7em;
+	}
+	
+	.title .byline
+	{
+		font-size: 1.3em;
+		color: rgba(255,255,255,0.60);
+	}
+
+/*********************************************************************************/
+/* Header                                                                        */
+/*********************************************************************************/
+
+	#wrapper
+	{
+		position: relative;
+		padding: 5em 0em 7em 0em;
+		background: #FFF;
+	}
+
+/*********************************************************************************/
+/* Header                                                                        */
+/*********************************************************************************/
+
+	#header-wrapper
+	{
+		position: relative;
+		padding: 5em 0em 7em 0em;
+		background: #111111 url(/header-bg.jpg) no-repeat center;
+		background-size: cover;
+	}
+
+	#header
+	{
+		position: relative;
+		padding: 5em 0em;
+	}
+
+/*********************************************************************************/
+/* Logo                                                                          */
+/*********************************************************************************/
+
+	#logo
+	{
+		position: absolute;
+		top: 3.6em;
+		left: 0;
+	}
+	
+	#logo h1
+	{
+		font-size: 2.6em;
+		color: #79C255;
+	}
+	
+	#logo a
+	{
+		text-decoration: none;
+		color: rgba(255,255,255,1);
+	}
+
+
+
+/*********************************************************************************/
+/* Menu                                                                          */
+/*********************************************************************************/
+
+	#menu
+	{
+		position: absolute;
+		top: 4.5em;
+		right: 0;
+	}
+	
+	#menu ul
+	{
+		display: inline-block;
+	}
+	
+	#menu li
+	{
+		display: block;
+		float: left;
+		text-align: center;
+	}
+	
+	#menu li a, #menu li span
+	{
+		padding: 1em 1.5em;
+		letter-spacing: 1px;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-size: 0.8em;
+		color: rgba(255,255,255,0.80);
+	}
+	
+	#menu li:hover a, #menu li.active a, #menu li.active span
+	{
+	}
+	
+	#menu .active a
+	{
+		border: 2px solid rgba(255,255,255,1);
+		border-radius: 6px;
+		color: rgba(255,255,255,1);
+	}
+	
+	#menu .icon
+	{
+	}
+
+/*********************************************************************************/
+/* Banner                                                                        */
+/*********************************************************************************/
+
+	#banner
+	{
+		padding-top: 10em;
+		text-align: center;
+	}
+	
+	#banner .title h2
+	{
+		font-size: 4em;
+	}
+	
+	#banner .title .byline
+	{
+		font-size: 2em;
+	}
+	
+	#banner .button
+	{
+		margin-top: 2em;
+		padding: 1.40em 3em;
+		border: 2px solid rgba(255,255,255,1);
+		border-radius: 6px;
+		font-weight: 700;
+		font-size: 1em;
+		
+	}
+	
+	    /*********************************************************************************/
+/* Image Style                                                                   */
+/*********************************************************************************/
+
+	.image
+	{
+		display: inline-block;
+	}
+	
+	.image img
+	{
+		display: block;
+		width: 100%;
+	}
+	
+	.image-full
+	{
+		display: block;
+		width: 100%;
+		margin: 0 0 2em 0;
+	}
+	
+	.image-left
+	{
+		float: left;
+		margin: 0 2em 2em 0;
+	}
+	
+	.image-centered
+	{
+		display: block;
+		margin: 0 0 2em 0;
+	}
+	
+	.image-centered img
+	{
+		margin: 0 auto;
+		width: auto;
+	}
+
+</style>
+
+
+<nav>
+<div id="header-wrapper">
+	<div id="header" class="container">
+		<div id="logo">
+			<h1><a href="#">LifeLessons</a></h1>
+		</div>
+		<div id="menu">
+			<ul>
+				<li class="active"><a href="/blog" accesskey="1" title="">Homepage</a></li>
+				<li><a href="/blog/authors" accesskey="2" title="">Authors</a></li>
+				<li><a href="/blog/posts" accesskey="3" title="">Posts</a></li>
+				<li><a href="/blog/categories" accesskey="4" title="">Categories</a></li>
+				<li><a href="#" accesskey="5" title="">Contact Us</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="banner" class="container">
+		<div class="title">
+			<h2>Share Your Life Thought Lessons</h2>
+			<span class="byline">Motivate | Inspire | Innovate | Excel </span>
+		</div>
+		<ul class="actions">
+			<li><a href="/blog/posts" class="button">Get Started</a></li>
+		</ul>
+	</div>
+</div>
+</nav> -->

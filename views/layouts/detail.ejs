@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include ('../partials/head') %>
+</head>
+
+<body class="container">
+
+    <header>
+        <%- include ('../partials/header') %>
+    </header>
+     <br><br><br>
+     <div>
+    <main>
+        <div class="row">
+            <%-defineContent('left-sidebar')%>
+            <%-defineContent('main-content')%>
+            <%-defineContent('right-sidebar')%>
+        </div>
+    </main>
+</div>
+    <footer>
+        <%- include ('../partials/footer') %>
+    </footer>
+
+</body>
+
+</html>
