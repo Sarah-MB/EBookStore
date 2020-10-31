@@ -1,24 +1,59 @@
 <!-- views/partials/header.ejs  -->
 
-<nav class="navbar navbar-default" role="navigation">
-<div class="container-fluid">
+<!--<nav class="navbar navbar-default" role="navigation">-->
+<!--<div class="container-fluid">-->
 
-   <div class="navbar-header">
-       <a class="navbar-brand" href="/">
-           <span class="glyphicon glyphicon glyphicon-tree-deciduous"></span>
-            Ebook Store
-       </a>
+<!--   <div class="navbar-header">-->
+<!--       <a class="navbar-brand" href="/">-->
+<!--           <span class="glyphicon glyphicon glyphicon-tree-deciduous"></span>-->
+<!--            Ebook Store-->
+<!--       </a>-->
 
-       <ul class="nav navbar-nav">
-           <li><a href="/">Home</a></li>
-           <li><a href="/blog/authors">Authors</a></li>
-           <li><a href="/blog/posts">Books</a></li>
-           <li><a href="/blog/categories">Catalogs</a></li>
-      </ul>
-   </div>
+<!--       <ul class="nav navbar-nav">-->
+<!--           <li><a href="/">Home</a></li>-->
+<!--           <li><a href="/blog/authors">Authors</a></li>-->
+<!--           <li><a href="/blog/posts">Books</a></li>-->
+<!--           <li><a href="/blog/categories">Catalogs</a></li>-->
+<!--      </ul>-->
+<!--   </div>-->
 
-</div>
-</nav>
+<!--</div>-->
+<!--</nav>-->
+
+<div class="bg-secondary">
+        <div class="container">
+            <div class="row pt-2 text-white">
+                <div class="col-md-12">
+                    <h6 class="float-left font-weight-bold"><i class="fa fa-phone"></i> 07038689968</h6>
+                    <h6 class="float-right font-weight-bold"><i class="fa fa-envelope"></i> Bookstore@gmail.com</h6>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <nav class="navbar navbar-expand-lg navbar-light bg-info p-3" id="navbar">
+        <a class="navbar-brand pl-5 text-white font-weight-bold" href="index.ejs">BOOKSTORE</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">            
+            <li class="nav-item">
+              <a class="nav-link text-white font-weight-bold" href="/blog/authors">Authors</a>
+            </li>            
+            <li class="nav-item">
+              <a class="nav-link text-white font-weight-bold" href="/blog/posts">Books</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white font-weight-bold" href="/blog/categories">Catalogs</a>
+            </li>            
+          </ul>
+		<form class="form-inline my-2 my-lg-0 pr-5">
+            
+            <span><a href="/blog/post/create" class="font-weight-bold text-white acct_login mr-5"><i class="fa fa-user-circle"  id="usericon"></i>&nbsp;&nbsp;&nbsp;Add Book</a></span>
+          </form>
+        </div>
+    </nav>
 <!-- <style>
 body
 	{

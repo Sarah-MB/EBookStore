@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial Rounded MT;
+    
+}
+a, a .title:hover {
+    text-decoration: none;
+}
+#body {
+    display: flex;
+    background-color: #F8F9FA;
+}
+#sidenav {
+    flex: 0.7;
+    margin-left: -1%;
+    padding: 0 2% 0 0%;
+    color: #0093FF;
+    background-color: #6C757D;
+    height: 140vh;
+}
+#sidenav li a {
+    color: #fff;
+/*    color: #0093FF;*/
+}
+#sidenav ul li a {
+    font-weight: bold;
+}
+#sidenav ul li a:hover {
+    text-decoration: none;
+}
+#sidenav ul li {
+    color: #fff;
+    list-style-type: none;
+    margin-bottom: 17%;
+    font-size: 14px;
+    
+}
+#fa_2 {
+    margin-right: 5%;
+    font-size: 20px;
+/*    visibility: visible;*/
+}
+#list {
+        cursor: pointer;
+}
+.main_body {
+    flex: 4;
+}
+
+
+/*------------------------------------------------------------*/
+#search_icon {
+    background-color: #fff!important;
+    border-radius: 0px;
+}
+@media (max-width: 800px) {
+    #sidenav {
+        flex: 1;
+        margin-left: -4.5%;
+        padding: 0 2.5% 0 0%;
+        background-color: #071739;
+        width: 5%;
+        height: 100vh;
+        transition: 0.5 ease-in-out;
+    }
+    .main_body {
+    flex: 7;
+       
+    }
+    #sidenav ul li, #sidenav ul li ul li a
+    #sidenav ul {
+       visibility: hidden;
+    }
+   #fa_2 {
+        visibility: visible;
+    }
+    #fa_2:hover {
+        color: #0093FF;
+    }
+    #list li a:hover .title {
+        visibility: visible;
+        font-size: 10px;
+        color: #0093FF;
+        cursor: pointer;
+    }
+
+}
