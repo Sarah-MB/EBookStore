@@ -1,7 +1,5 @@
 var Post = require('../models/post');
 var models = require('../models');
-var multer  = require('multer')
-var path = require('path');
 var async = require('async');
 
 // Display post create form on GET.
@@ -20,6 +18,7 @@ exports.post_create_post = async function( req, res, next) {
     const post = await models.Post.create({
             post_title: req.body.post_title,
             post_body: req.body.post_body,
+            book_url: req.file.filename,
             AuthorId: author_id
         } 
     );
@@ -64,8 +63,6 @@ exports.post_create_post = async function( req, res, next) {
     res.redirect('/blog/author/' + author_id);
 
 };
-
-
 
 // Display post delete form on GET.
 exports.post_delete_get = async function(req, res, next) {

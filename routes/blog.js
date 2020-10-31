@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
-
-
+var multer  = require('multer')
+var path = require('path');
 // Require our controllers.
 var author_controller = require('../controllers/authorController');
 var post_controller = require('../controllers/postController'); 
@@ -10,6 +10,16 @@ var comment_controller = require('../controllers/commentController');
 
 
 
+///MULTER FOR FILE UPLOAD 
+const storage = multer.diskStorage({
+    destination: "./public/uploads/",
+    filename: function(req, file, cb){
+        cb(null,Date.now() + path.extname(file.originalname));
+    }
+  });
+  const upload = multer({
+    storage: storage
+  });
 /// POST ROUTES ///
 
 
@@ -17,7 +27,7 @@ var comment_controller = require('../controllers/commentController');
 router.get('/post/create', post_controller.post_create_get);
 
 // POST request for creating Post.
-router.post('/post/create', post_controller.post_create_post);
+router.post('/post/create', upload.single('book_url'), post_controller.post_create_post);
 
 // GET request to delete Post.
 router.get('/post/:post_id/delete', post_controller.post_delete_get);
