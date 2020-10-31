@@ -1,6 +1,7 @@
 var Post = require('../models/post');
 var models = require('../models');
-
+var multer  = require('multer')
+var path = require('path');
 var async = require('async');
 
 // Display post create form on GET.

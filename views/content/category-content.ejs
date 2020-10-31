@@ -1,15 +1,24 @@
 <!--CATEGORY VIEW START HERE-->
 <!--complete logic for category view-->
 <% if (title == 'Create Category') { %>
-    <div class="col-sm-8">    
-        <div class="jumbotron">
+<div class="col-md-10 mx-auto d-block">
+<div class="card bg-white shadow-sm">
+    <h3 class="card-header bg-info text-white text-center">Create Catalog</h3>
+    <div class="card-body pt-5 pl-5 pr-5 pb-4">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 mx-auto d-block">
+                <div class="input-group">
             <form action="" method="post">
-              Category Name:<br>
-              <input type="text" name="name" value="Category Name" class="w3-input w3-border w3-round-large">
-              <br><br>
-              <input type="submit" class="btn btn-primary btn-ms"  value="Create Category">
+              Catalog Name:<br>
+              <input type="text" name="name" value="" class="form-control">
+              <br>
+              <input type="submit" class="btn btn-info mx-auto d-block mt-4"  value="Add Catalog">
             </form>
         </div>
+        </div>
+    </div>
+    </div>
+    </div>
     </div>
 <% } else if (title == 'Delete Category') { %>
      
@@ -25,19 +34,24 @@
         </div>
     </div>
 <% } else if (title == 'Category Details') { %>
-    <div class="col-sm-8">    
-        <div class="">
-             <h1>Details of a Single category - <%= category.name %></h1>
+    <div class="col-md-10 mx-auto d-block">
+        <br>
+        <div class="card bg-white shadow-sm">
+            <h3 class="card-header bg-info text-white text-center">Catalog Details</h3>
+            <div class="card-body pt-5 pl-5 pr-5 pb-4">
+                <div class="row">
+                    <div class="col-md-12">
+             <h2>Catalog Details - <%= category.name %></h2>
              <p>I am an category for this ID = <%= category.id %></p>
              <p>Category Name: <%= category.name %></p>
              <a href="/blog/category/<%= category.id %>/update">Edit  Category</a> | <a href="/blog/category/<%= category.id %>/delete">Delete Category</a>
         </div>
         
         <% if(category.posts.length == 0) { %>
-            <h2>There are no posts under this category yet </h2>
+            <h3>There are no posts under this category yet </h3>
         <% } else { %>
-            <h2>All Posts in this Category</h2>
-            <div class="">
+            <h3>All Posts in this Category</h3>
+            <div class="container">
                 <ol>
                 <% category.posts.forEach(function(post) { %>
                         <li>
@@ -52,6 +66,11 @@
             </div>    
          <% } %>  
     </div>
+    </div>
+     </div>
+   </div>
+  </div>
+  </div>
 <% } else if (title == 'Category List') { %>
     <div class="col-md-10 mx-auto d-block">
     <div class="card bg-white shadow-sm">

@@ -1,34 +1,29 @@
 <!--AUTHOR VIEW STARTS HERE -->
 <!--complete logic for author view-->
 <% if (title == 'Create Author') { %>
-    <div class="main_body">
-<!--           <img src="profile.png" alt=""> -->
-    <div class="container-fluid">
-        <div class="row">
 <!--              search input-->                    
-            <div class="col-md-10 mx-auto d-block">
-                <br>
-                <br><br>
-                <br>
-                <div class="card bg-white shadow-sm">
-            <h3 class="card-header bg-info text-white text-center">Become Author</h3>
-            
+        <div class="col-md-10 mx-auto d-block">
+            <br>
+            <br><br>
+            <br>
+            <div class="card bg-white shadow-sm">
+        <h3 class="card-header bg-info text-white text-center">Become Author</h3>
+        
             <form action="" method="post" class="container">
+                <br>
               Author First Name:<br>
-              <input type="text" name="first_name" value="Author First Name">
+              <input type="text" name="first_name" value="Author First Name" class="form-control" >
               <br><br>
               Author Last Name:<br>
-              <input type="text" name="last_name" value="Author Last Name">
+              <input type="text" name="last_name" value="Author Last Name" class="form-control" >
               <br><br>
                Author Email Address:<br>
-              <input type="email" name="email" value="hello@manifest.com">
+              <input type="email" name="email" value="hello@Gads.com" class="form-control" >
               <br><br>
-              <input type="submit" value="Create Author" class="btn btn-info">
+              <input type="submit" value="Become an Author" class="btn btn-info">
             </form>
+            <br>
         </div>
-    </div>
-</div>
-</div>
 <% } else if (title == 'Delete Author') { %>
      
 <% } else if (title == 'Update Author') { %>
@@ -49,7 +44,7 @@
         </div>
     </div>
 <% } else if (title == 'Author Details') { %>
-<div class="row">
+<!--<div class="row">-->
 <!--              search input-->                    
     <div class="col-md-10 mx-auto d-block">
         <br>
