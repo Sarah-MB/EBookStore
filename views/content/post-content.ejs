@@ -13,9 +13,8 @@
               Book Summary:<br>
               <input type="text" name="post_body" value="Post Body" class="form-control">
               <br><br>
-              <input type="file" id="book_url" name="book_url" class="btn btn-info" value="Upload">
-              <input type="submit">
-              Author:<br>
+              <input type="file" id="book_url" name="book_url" class="btn btn-info" value="Upload"><br>
+              <label>Author: </label>
                <select name = "author_id" class="form-control ms-2" required>
                     <% authors.forEach(function(author) { %>
                     <option  value="<%= author.id %>"><%= author.first_name %></option>
